@@ -6,6 +6,7 @@ Abstract:This programs utilize buttons and filters to create a gui that initiali
          displaying it on a different window.
          
 Author:Ana Pena,Humberto Plaza, Yeraldiny Jose Alonzo
+
 Date: March 15, 2015
 
 '''
@@ -40,10 +41,7 @@ def filter1():
 
    
    window2 = Tk() #creates windows
-   #window2.configure(background='green')
-  
    
-
    T = Text(window2, height=1, width=28, font=("Helvetica", 32)) #windows size
    T.pack()
    T.insert(END, "Please Choose one!") #insert a title
@@ -66,10 +64,8 @@ def filter1():
 def filter2():
 
    window2 = Tk() #creates windows
-   window2.configure(background='green')
-
-
-   T = Text(window2, height=3, width=28, font=("Helvetica", 32)) #windows size
+   
+   T = Text(window2, height=1, width=28, font=("Helvetica", 32)) #windows size
    T.pack()
    T.insert(END, "Please Choose one!")
 
@@ -87,11 +83,9 @@ def filter2():
 
 def filter3():
 
-   window2 = Tk()
-   window2.configure(background='green') #creates window
-
-
-   T = Text(window2, height=3, width=28, font=("Helvetica", 32)) #windows size
+   window2 = Tk()#creates Window
+  
+   T = Text(window2, height=1, width=28, font=("Helvetica", 32)) #windows size
    T.pack()
    T.insert(END, "Please Choose one!")
 
