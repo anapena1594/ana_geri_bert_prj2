@@ -4,8 +4,16 @@ Title:GUI_ImageManipulation.py
 Abstract:This programs utilize buttons and filters to create a gui that initialize the buttons for three different filters.
          Each button grabs the code and make the picture take the filter chosen by the user,
          displaying it on a different window.
-         
+ 
 Author:Ana Pena,Humberto Plaza, Yeraldiny Jose Alonzo
+
+Ana: Worked on the GUI section
+Humberto: Worked on the black and white filter section
+Yeraldiny: Worked on sepia and negative filter section
+
+GitHub Link: https://github.com/anapena1594/ana_geri_bert_prj2/blob/master/GUI_ImageManipulation.py  
+
+Each member used Humberto's computer to push to GitHub
 
 Date: March 15, 2015
 
