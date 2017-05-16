@@ -1,0 +1,295 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>O T T E R  B O O T H</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<title>Images</title>
+	<style type="text/css">
+		body{
+			color: #665544;
+			background-color: #d4d0c6;
+			background-image: ;
+			font-family: Georgia, "Times New Roman", serif;
+			text-align: center;
+
+		}
+		.wrapper{
+			width: 720px;
+			margin: 0px auto;
+	
+
+     
+   
+
+		}
+		.header{
+			margin: 40px 0px 20px 0px;
+
+		}
+		.entry{
+			width: 220px;
+			float: left;
+			margin: 10px;
+			height: 198px;
+			background-image: ;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			padding-bottom: 70px;
+
+
+		}
+		figure{
+			display: block;
+			width: 220px
+			height: 170px;
+			background-color: #e7e3d8;
+			margin: 0px
+			padding: 15px;
+			text-align: left;
+
+
+		}
+		figure img{
+			width: 250px;
+			height: 200px;
+			border: 1px solid #d6d6d6;
+			border-radius: 30%;
+		}
+		figcaption{
+			background-image: ;
+			padding-left: 10px;
+		}
+		button {
+	    	background-color: #01909f; /* Green */
+    		border: none;
+   	 		color: white;
+    		padding: 12px 15px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px
+    		border-radius: 8px;
+		}
+		#changeback{
+			display: none;
+
+		}
+		#myPictures{
+
+			display: none;
+			text-align: center;
+			position: center;
+		}
+		table {
+			align-content: center;
+			background-color: #eee9e5;
+			text-align: center;
+			background-image: url("https://static.brusheezy.com/system/resources/premium_previews/000/055/004/non_2x/retro-flower-photoshop-pattern-photoshop-patterns.jpg");
+			border-width: 60px;
+			padding: 15px
+		}
+		input[type=file] {
+    	background-color: #eee9e5;
+    	color: #665544;
+    	padding: 10px;
+		}	
+
+		input[type=button], input[type=submit], input[type=reset] {
+    	background-color: #01909f;
+    	border: none;
+    	color: white;
+    	padding: 12px 32px;
+    	text-decoration: none;
+    	margin: 4px 2px;
+    	cursor: pointer;
+		}	
+		#choose{
+
+		background-color: #01909f;
+    	border: none;
+    	color: white;
+    	padding: 16px 32px;
+    	text-decoration: none;
+    	margin: 4px 2px;
+    	cursor: pointer;
+
+
+		}	
+		#floatOtter {
+
+		padding: 10px;
+		float: left;
+		}
+		.preload {
+		margin:0;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-right: -50%;
+		transform:translate(-50%, -50%);
+}			
+	</style>
+	<script type="text/javascript">
+		
+	function hideFilters(){
+
+
+		document.getElementById("myPictures").style.display = "none";
+		document.getElementById("change").style.display = "inline";
+		document.getElementById("changeback").style.display = "none";
+
+	}
+		function displayFilters(){
+
+
+
+		/*window.location.hash = "entry6";	*/
+		document.getElementById("myPictures").style.display = "inline";
+		document.getElementById("change").style.display = "none";
+		document.getElementById("changeback").style.display = "inline";
+
+
+
+
+		{% if filename %}
+		document.getElementById("filter1").src = "/static/{{filename}}";
+		{% endif %}
+
+		{% if bw %}
+		document.getElementById("filter2").src = "/static/{{bw}}";
+		{% endif %}
+
+		{% if sep %}
+		document.getElementById("filter3").src = "/static/{{sep}}";
+		{% endif %}
+
+		{% if neg %}
+		document.getElementById("filter4").src = "/static/{{neg}}";
+		{% endif %}
+
+		{% if hot %}
+		document.getElementById("filter5").src = "/static/{{hot}}";
+		{% endif %}
+
+		{% if blur %}
+		document.getElementById("filter6").src = "/static/{{blur}}";
+		{% endif %}
+
+
+	
+
+
+	}
+
+
+	</script>
+	<!--<h1>  O T T E R  B O O T H </h1>-->
+</head>
+	<body>
+
+<script>
+	$(function() {
+		$(".preload").fadeOut(2000, function() {
+			$(".myPictures").style.display = "inline";
+			window.location.hash = "entry6";
+			$(".myPictures").fadeIn(1000);
+		});
+	});
+</script> 
+
+
+
+		<div class = "wrapper">	
+			<div class = "header">
+			<!--<center>
+			<table>
+			<tr>
+			<td>
+			
+		<img id = "test2" src = "/static/logo.jpg"/>
+			</td>
+			</tr>
+			</table>
+			<center>-->
+			<img id = "notest" src = "/static/otterscale.jpg" width="800px" height="500px" />
+
+
+    <title>Upload new File</title>
+    <!--<h2>Upload File</h2>-->
+    <form class = "choose" method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+         <input type=submit value=Upload onclick = "displayFilters()">
+    </form>
+    
+    <button  id = "change" onclick = "displayFilters()">Display Images</button>
+    <button id = "changeback" class= "changeback"  onclick = "hideFilters()">Hide Images</button>
+				
+				<p>Here is a selection of antique botencial prints held in our collection</p>
+
+
+
+
+	  <div class="preload">
+    	<img src="/static/loading_circle.gif" />
+    </div>
+
+
+			</div>
+	<div  class = "myPictures" id = "myPictures">
+			<div id = "entry1" class = "entry">
+				<figure><img id = "filter1" src = ""/>
+				<figcaption> Original Filter <br><br/>
+				
+				</figcaption>
+				</figure>
+			</div>		
+			<div id = "entry2" class = "entry">
+				<figure><img id = "filter2" src = ""/>
+
+				<figcaption> Black and White Filter <br><br/>
+			
+				</figcaption>
+				</figure>
+			</div>
+			<div id = "entry3" class = "entry">
+				<figure><img id = "filter3" src = ""/>
+				<figcaption> Sepia Filter <br><br/>
+				
+				</figcaption>
+				</figure>
+			</div>
+			<div  id = "entry4" class = "entry">
+				<figure><img id = "filter4" src = ""/ width = "200px" height="150px"/>
+				<figcaption> Negative Filter <br><br/>
+				
+				</figcaption>
+				</figure>
+			</div>
+			<div id = "entry5" class = "entry">
+				<figure><img id = "filter5" src = ""/ width = "200px" height="150px">
+				<figcaption> Hot Filter<br><br/>
+				
+				</figcaption>
+				</figure>
+			</div>
+			<div id = "entry6" class = "entry">
+				<figure>
+				<img id = "filter6" src = ""/ width = "200px" height="150px"/>
+				<figcaption>Blur Filter <br><br/>
+			
+				</figcaption>
+				</figure>
+			</div>
+
+		</div>
+
+		</div>
+
+	</body>
+
+</html>
