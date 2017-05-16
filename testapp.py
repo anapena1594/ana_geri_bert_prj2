@@ -172,7 +172,7 @@ def negative(filename):
     negativeImage = Image.open(negImg)
     WIDTH,HEIGHT = negativeImage.size
    
-   # Creating Image objects for Sepia and Negative Images
+   # Creating Image objects for Negative Images
     negative_Image= Image.new("RGB",(WIDTH,HEIGHT))
    
    # Loading Pixel Data for all images 
@@ -198,7 +198,7 @@ def negative(filename):
     print(negPictures)
 
 def hot(filename):
- 
+    #Opening The Image
     hotImg = ('/Users/fightlikehell/Desktop/flask/app/static/' + filename)
     hotImage = Image.open(hotImg)
     WIDTH,HEIGHT = hotImage.size
@@ -206,8 +206,7 @@ def hot(filename):
    # Creating Image objects for Hot
     hot_Image= Image.new("RGB",(WIDTH,HEIGHT))
    
-   # 
-   Loading Pixel Data for all images (original and new)
+   # Loading Pixel Data for all images (original and new)
     raw_pixels = hotImage.load()
  
     hot_pixels = hot_Image.load()
@@ -230,9 +229,12 @@ def hot(filename):
     print(hotPictures)
 
 def blur(filename):
+    #Opening the images
     blurImg = ('/Users/fightlikehell/Desktop/flask/app/static/' + filename)
     blurImage = Image.open(blurImg)
+    #Using A pillow Library we convert the image.
     blurred_image = blurImage.filter(ImageFilter.GaussianBlur(radius=50))
+    #We Save the Image in the path.
     blurred_image.save('/Users/fightlikehell/Desktop/flask/app/static/filters/blur/' + filename)
     blur = "filters/blur/" + filename
     blurPictures.append(blur)
