@@ -16,7 +16,7 @@ Humberto: Worked on the html page and figured how to display the images in six d
           as contributing with the filters functions. 
 Yeraldiny: Worked on the upload section and contributed to the code (py and html) section
 
-GitHub Link: https://github.com/anapena1594/ana_geri_bert_prj2/blob/master/GUI_ImageManipulation.py  
+GitHub Link: https://github.com/anapena1594/ana_geri_bert_prj2/blob/master/testapp.py
 
 Each member code that was done was copy and pasted into cloud 9 in order to push it to GitHub
 
