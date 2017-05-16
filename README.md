@@ -15,6 +15,7 @@ Author: Humberto Plaza, Ana Pena, Yeraldiny Jose Alonzo
 
 
 Ana: Worked on the red and blur filters and contributed to the code (py and html) section
+
 Humberto: Worked on the html page and figured how to display the images in six different boxes as well
           as contributing with the filters functions.       
 Yeraldiny: Worked on the upload section and contributed to the code (py and html) section
